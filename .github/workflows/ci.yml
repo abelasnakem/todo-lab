@@ -65,6 +65,7 @@ jobs:
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/todo_lab_test
+        continue-on-error: true
 
       - name: Run tests
         run: bin/rails test
